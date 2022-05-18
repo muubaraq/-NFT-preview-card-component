@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Source+Code+Pro&display=swap');
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%) ;
+  color: hsl(215, 51%, 70%);
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: .6em;
+}
+
+.card-image-section {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 9%;
+  bottom: 0;
+  left: 3%;
+  right: 0;
+  height: 91%;
+  width: 96%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: hsla(178, 100%, 50%, 0.603);
+  border-radius: .5em;
+}
+
+.card:hover .overlay {
+  opacity: .9;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.card-img-top {
+  border-radius: .7em;
+}
+
+h1 a{
+  color:hsl(0, 0%, 100%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-text {
+  font-weight: 400;
+}
+
+h1:hover a{
+  color: hsl(178, 100%, 50%);
+}
+
+.eth-timing {
+  border-bottom: 1px solid;
+}
+
+.eth-1 {
+  color: hsl(178, 100%, 50%);
+}
+
+.creator-section img {
+  width:17%;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.creator-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.creator-section a:hover {
+  color: hsl(178, 100%, 50%);
+}
